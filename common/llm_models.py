@@ -1,0 +1,60 @@
+from entities import app_entities
+
+models = [
+    app_entities.LLMModel(
+        name="GPT-4o Mini",
+        llm_model_id="gpt-4o-mini",
+        llm_model_type="openai",
+        context_window=128_000,
+        max_tokens=16384,
+        platform='openai',
+    ),
+    app_entities.LLMModel(
+        name="GPT-4o",
+        llm_model_id="gpt-4o",
+        llm_model_type="openai",
+        context_window=128_000,
+        max_tokens=16384,
+        platform='openai',
+    ),
+    app_entities.LLMModel(
+        name="GPT-4 Turbo",
+        llm_model_id="gpt-4-turbo",
+        llm_model_type="openai",
+        context_window=128_000,
+        max_tokens=4096,
+        platform='openai',
+    ),
+    app_entities.LLMModel(
+        name="GPT-4",
+        llm_model_id="gpt-4",
+        llm_model_type="openai",
+        context_window=8192,
+        max_tokens=4096,
+        platform='openai',
+    ),
+    # app_entities.LLMModel(
+    #     name="GPT-3.5 Turbo",
+    #     llm_model_id="gpt-3.5-turbo",
+    #     llm_model_type="openai",
+    #     context_window=16385,
+    #     max_tokens=4096,
+    #     platform='openai',
+    # ),
+    app_entities.LLMModel(
+        name="Claude V2",
+        llm_model_id="anthropic.claude-v2",
+        llm_model_type="anthropic",
+        context_window=200_000,
+        max_tokens=4096,
+        platform='aws',
+    ),
+    app_entities.LLMModel(
+        name="Claude 3 Haiku",
+        llm_model_id="anthropic.claude-3-haiku-20240307-v1:0",
+        llm_model_type="anthropic",
+        context_window=200_000,
+        max_tokens=4096,
+        platform='aws',
+    ),
+]

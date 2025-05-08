@@ -1,0 +1,8 @@
+db:
+  db_url: 'sqlite:///./database.db'
+  dialect: 'mysql'
+  username: ${HNLP_CELERY_DB_USER}
+  password: ${HNLP_CELERY_DB_PASSWORD}
+  database: ${HNLP_CELERY_DB_NAME}
+  hostname: ${MYSQL_DB_HOST}
+
